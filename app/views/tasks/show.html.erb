@@ -2,3 +2,7 @@
 <h2><%= @task.title %></h2>
 <p><%= @task.details %></p>
 <p><%= @task.completed %></p>
+
+<%= link_to "Edit this task", edit_path(@task) %>
+
+<%= link_to "Delete task", edit_path(@task), method: delete %>
